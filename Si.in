@@ -1,0 +1,55 @@
+	
+&control
+    calculation = 'relax',
+    title = 'si.slab',
+    prefix = 'si.slab',
+    pseudo_dir= '/home/ayan/pseudo_directory',
+    verbosity = 'high',
+    restart_mode = 'from_scratch',
+    outdir = '/home/ayan/Rlx3.8to4.0',  ! Output will be created in the specified directory
+    tprnfor = .TRUE.,
+    tstress = .TRUE.,
+    etot_conv_thr = 1.0D-05,
+    forc_conv_thr = 1.0D-04,
+    nstep = 500
+/
+
+&system
+    ibrav = 0,
+    celldm(1)= 14.631,
+    nat = 2,
+    ntyp = 1,
+    ecutwfc = 100,
+    ecutrho = 800,
+    occupations = 'smearing',
+    smearing = 'methfessel-paxton',
+    degauss = 0.03
+/
+
+&electrons
+    conv_thr = 1.0D-8,
+    mixing_beta = 0.3,
+    electron_maxstep = 500,
+    diagonalization = 'cg',
+    mixing_mode = 'local-TF'
+/
+
+&IONS
+    ion_dynamics = 'bfgs'
+/
+
+CELL_PARAMETERS (alat)
+1.000      0.000000   0.000000
+0.5000000  0.8660000  0.000000
+0.000000   0.000000   5.0000
+
+ATOMIC_SPECIES
+Si 28.085 Si.pbe-n-kjpaw_psl.1.0.0.UPF
+
+ATOMIC_POSITIONS (crystal)
+Si  0.0000  0.0000  0.000000  0 0 0
+Si  0.3333333333 0.3333333333  0.0300000000
+
+K_POINTS automatic
+6 6 1 0 0 0
+

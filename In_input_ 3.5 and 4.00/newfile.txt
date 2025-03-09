@@ -1,0 +1,52 @@
+&control
+    calculation = 'relax',
+    title = 'si.slab',
+    prefix = 'si.slab',
+    verbosity = 'high',
+    restart_mode = 'from_scratch',
+    outdir = './output',  # Assuming output will also be created in the same directory
+    tprnfor = .TRUE.,
+    tstress = .TRUE.,
+    etot_conv_thr = 1.0D-04,
+    forc_conv_thr = 1.0D-03,
+    nstep = 500
+/
+
+&system
+    ibrav = 0,
+    celldm(1) = 6.0880,
+    nat = 4,
+    ntyp = 1,
+    ecutwfc = 70,
+    ecutrho = 560,
+    occupations = 'smearing',
+    smearing = 'methfessel-paxton',
+    degauss = 0.03
+/
+
+&electrons
+    conv_thr = 1.0D-7,
+    mixing_beta = 0.3,
+    electron_maxstep = 500,
+    diagonalization = 'cg',
+    mixing_mode = 'local-TF'
+/
+
+&IONS
+    ion_dynamics = 'bfgs'
+/
+
+CELL_PARAMETERS (alat)
+3.861000  0.000000  0.000000
+0.000000  3.861000  0.000000
+0.000000  0.000000  19.999980
+
+
+ATOMIC_SPECIES
+Si 28.085 Si.pbe-n-kjpaw_psl.1.0.0.UPF  # Ensure this file is in the same directory
+
+ATOMIC_POSITIONS (alat)
+Si  0.333333333333  0.666666666667  0.604708933279
+Si 0.666666666667  0.333333333333  0.582791066721
+-K_POINTS (automatic)
+6 6 1 0 0 0
