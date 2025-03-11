@@ -18,3 +18,12 @@ Following the SCF calculations, relaxation calculations are performed to refine 
 **Further Simulation Using Silver (Ag) Interaction**
 
 To explore potential applications of silicene in device fabrication, additional simulations are conducted by introducing silver (Ag) atoms onto the silicene surface. Silver is known for its catalytic and conductive properties, making it an ideal candidate for studying silicene-metal interactions. These simulations help in understanding charge transfer mechanisms, structural modifications, and stability changes induced by Ag deposition. The insights gained from these studies are essential for optimizing silicene’s performance in practical electronic and optoelectronic applications.
+
+# Results
+The optimized bond length was found to be 3.87 Å, which is consistent with previous findings.
+
+Optimised Strucutre Below- 
+![Alt Text](Si.png)
+# Energy VS Lattice Value
+The following graph shows the value of enrgy for the different cell lattice value. It helps us in finding the lattice value which corresponds to the minimum enrgy.
+![Alt Text](plot_3.2to4.3.png)
