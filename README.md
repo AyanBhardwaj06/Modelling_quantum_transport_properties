@@ -16,6 +16,9 @@ The optimized bond length was found to be 3.87 Å, which is consistent with prev
 
 Optimised Strucutre Below- 
 ![Alt Text](Si.png)
+# Energy VS Lattice Value
+The following graph shows the value of enrgy for the different cell lattice value. It helps us in finding the lattice value which corresponds to the minimum enrgy.
+![Alt Text](plot_3.2to4.3.png)
 
 
 
