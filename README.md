@@ -13,7 +13,10 @@ Ready-to-use files for loading into XCrySDen.
 The best-optimized structure has been drawn for visualization.
 # Results
 The optimized bond length was found to be 3.87 Å, which is consistent with previous findings.
+
 Optimised Strucutre Below- 
+![Alt Text](Si.png)
+
 
 
 
